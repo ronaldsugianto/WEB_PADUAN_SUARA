@@ -21,37 +21,37 @@
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th>No</th>
                                             <th>Nim</th>
                                             <th>Nama</th>
                                             <th>Jurusan</th>
-                                            <th>Angkatan</th>
+                                            <th>Email</th>
+                                            <th>Jenis Suara</th>
                                             <th>Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
                                             <th>51014021</th>
                                             <th>Ronald sugiato</th>
                                             <th>sistem informasi</th>
-                                            <th>2014</th>
+                                            <th>ronaldsugianto_15@kharisma.ac.id</th>
+                                            <th>Sopran</th>
                                             <th>Aktiv</th>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
                                             <th>51014000</th>
                                             <th>ela</th>
                                             <th>Sistem informasi</th>
-                                            <th>2014</th>
+                                            <th>ela@kharisma.ac.id</th>
+                                            <th>Alto</th>
                                             <th>Aktiv</th>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
                                             <th>51014000</th>
-                                            <th>lala</th>
-                                            <th>Teknik inromatika</th>
-                                            <th>2014</th>
+                                            <th>eeeela</th>
+                                            <th>Sistem informasi</th>
+                                            <th>eeeela@kharisma.ac.id</th>
+                                            <th>tenor</th>
                                             <th>Aktiv</th>
                                         </tr>
                                     </tbody>
