@@ -9,10 +9,14 @@ $route['loginadmin'] = 'loginadmin';
 
 $route['home'] = 'home';
 
-
 $route['point'] = 'point';
-$route['pendaftaran'] = 'pendaftaran';
 $route['songlist'] = 'songlist';
+$route['login'] = 'akun/login';
+
+$route['pendaftaran'] = 'Akun/pendaftaran';
+
+
+
 
 $route['anggota'] = 'anggota';
 

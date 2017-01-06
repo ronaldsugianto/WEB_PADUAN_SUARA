@@ -3,9 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Anggota extends CI_Controller {
 
-
+public function __construct(){
+	parent::__construct();
+	$this->load->model('Akun_model');
+}
 	public function index()
 	{
+	   $data['akun'] = $this->Akun_model->view_user(); 
 		$this->load->view('templates/header');	
 		$data['judul'] = "Welcome To Halaman Anggota UKM Paduan Suara!";
 
@@ -17,7 +21,7 @@ class Anggota extends CI_Controller {
 //bagian NAV=======================================
 
 	
-		$this->load->view('anggota');
+		$this->load->view('anggota', $data);
 
 		$this->load->view('templates/footer');			
 	}
