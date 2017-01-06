@@ -1,0 +1,63 @@
+
+
+.btn-default:hover {
+    color: #fff;
+    background-color: #feb84f;
+    border-color: #feb84f;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    color: #fff;
+    background-color: #feb84f;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.dropdown-menu {
+background-color: #feb84f;
+margin: 8px 0 0;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #feb84f;
+}
+
+.btn-batal {
+    color: #fff;
+    background-color: #bc3721;
+    border-color: #bc3721;
+}
+
+.btn-batal:hover {
+    color: #fff;
+    background-color: #e04e4e;
+    border-color: #e04e4e;
+}
+
+
+.btn-daftar {
+    color: #fff;
+    background-color: #2c9038;
+    border-color: #2c9038;
+}
+
+.btn-daftar:hover {
+    color: #fff;
+    background-color: #65ea54;
+    border-color: #65ea54;
+}
+
+
+
