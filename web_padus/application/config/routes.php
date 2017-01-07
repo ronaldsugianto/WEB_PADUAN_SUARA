@@ -15,8 +15,9 @@ $route['login'] = 'akun/login';
 
 $route['pendaftaran'] = 'Akun/pendaftaran';
 
-
-
+/***********AJAX******************/
+$route['ajax/ceknama'] = 'ajax/ceknamaanggota';
+/********************************/
 
 $route['anggota'] = 'anggota';
 

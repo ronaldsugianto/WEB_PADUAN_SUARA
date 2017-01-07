@@ -5,6 +5,8 @@
     <!-- Header======================================= -->
 
 
+
+
     <!-- Home ========================== -->
     <section id="Home">
         <div class="container">
@@ -265,9 +267,30 @@
 
 
 
+    <!-- BAGIAN COMMENT BOX -->
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.8&appId=1431174593584141";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+        <div class="fb-comments" data-href="https://www.facebook.com/groups/732325093611036/" data-width="100%" data-numposts="5"></div>
+
+
+
+    <!-- BAGIAN COMMENT BOX -->
+
+
+
+
+
+
 
     <!-- POOPUP KEGIATAN -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
 
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">

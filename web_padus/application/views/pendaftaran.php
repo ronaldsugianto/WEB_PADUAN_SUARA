@@ -16,15 +16,18 @@
     <hr class="music">
     <br>
     <br>
-      <form class="form-horizontal" method="post" action="pendaftaran">
+      <form class="form-horizontal" method="post" action="<?= base_url()?>pendaftaran">
   <fieldset>
 
     <div class="form-group">
       <label type="name" for="inputNama" class="col-lg-2 control-label">Nama</label>
       <div class="col-lg-5">
-        <input class="form-control" name='nama' placeholder="Nama Lengkap" type="text" required="required">
+        <input class="form-control" name='nama' placeholder="Nama Lengkap" type="text" id="nama" required="required">
+    <p id="warning_nama"> </p>
       </div>
     </div>
+
+
 
     <div class="form-group">
       <label fotionNIM" class="col-lg-2 control-label" >NIM</label>

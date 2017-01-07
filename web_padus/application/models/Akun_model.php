@@ -19,6 +19,14 @@ public function insert_user()
 
 	}
 
+public function nama_sudah_terdaftar(){
+       $query = $this->db->get_where( 'anggotaukm', array( 'nama' => $nama) );
+
+    }
+
+
+
+
 
 public function view_user(){
 	$query =  $this->db->get('anggotaukm');
@@ -38,3 +46,5 @@ public function get_user(){
 
 
 }
+
+?>
