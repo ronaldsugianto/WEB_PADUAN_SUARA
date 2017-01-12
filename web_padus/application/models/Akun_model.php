@@ -6,34 +6,119 @@ public function __construct(){
 	parent::__construct();
 }
 
+/*====================pendaftaran ANGGOTA=========================== */
 public function insert_user()
 	{
 	$data = 
 		[	'nama' => $this->input->post('nama'),
 			'email' => $this->input->post('email'),
 			'nim' => $this->input->post('nim'),
-			'jurusan' => $this->input->post('jurusan')
+			'jurusan' => $this->input->post('jurusan'),
+
 		];
 		
 		$this->db->insert('anggotaukm', $data);
 
 	}
+/*=============================================================== */
 
-public function nama_sudah_terdaftar(){
-       $query = $this->db->get_where( 'anggotaukm', array( 'nama' => $nama) );
+/*====================LIHAT ANGGOTA=========================== */
+	public function view_user(){
+		$query =  $this->db->get('anggotaukm');
+		return $query->result_array();
+	}
+/*=============================================================== */
 
-    }
+/*====================HAPUS anggota=================================*/
+	function hapus_data($where,$table){
+		$this->db->where($where);
+		$this->db->delete($table);
+	}
+/*==========================================================================*/
 
-
-
-
-
-public function view_user(){
-	$query =  $this->db->get('anggotaukm');
-	return $query->result_array();
+/*=====================EDIT DATA ANGGOTA=====================*/
+	function edit_data($where,$table){		
+	return $this->db->get_where($table,$where);
 	}
 
-public function get_user(){
+
+	function update_data($where,$data,$table){
+		$this->db->where($where);
+		$this->db->update($table,$data);
+	}	
+/*======================================================================*/
+
+/*=====================EDIT DATA kegiatan=====================*/
+	function edit_datakg($where,$table){		
+	return $this->db->get_where($table,$where);
+	}
+
+
+	function update_datakg($where,$data,$table){
+		$this->db->where($where);
+		$this->db->update($table,$data);
+	}	
+/*======================================================================*/
+
+
+/*====================upload KEGIATAN============================= */
+public function insert_kegiatan()
+	{
+	$data = 
+		[	
+			'idkegiatan' => $this->input->post('idkegiatan'),	
+			'waktu' => $this->input->post('waktu'),
+			'tanggal' => $this->input->post('tanggal'),
+			'kegiatan' => $this->input->post('kegiatan'),
+			'tempat' => $this->input->post('tempat')
+
+		];
+		
+		$this->db->insert('kegiatanukm', $data);
+
+	}
+/*=============================================================== */
+
+/*====================LIHAT KEGIATAN============================= */
+	public function view_kegiatan(){
+		$query =  $this->db->get('kegiatanukm');
+		return $query->result_array();
+	}
+/*=============================================================== */
+
+/*=========================HAPUS kegiatan======================*/
+	function hapus_kegiatan($where,$table){
+		$this->db->where($where);
+		$this->db->delete($table);
+	}
+/*==========================================================================*/
+
+
+
+/*=============================BAGIAN AJAX PENDAFTARAN=================================*/
+	public function email_sudah_terdaftar( $email ){
+	      $query = $this->db->get_where( 'anggotaukm', array( 'email' => $email) );
+ 
+    if( !empty( $query->row_array() ) ) {
+	            return true;
+	        }
+	        return false;                    
+
+	}
+
+	public function nim_sudah_terdaftar( $nim ) {
+		$query = $this->db->get_where( 'anggotaukm', array( 'nim' => $nim) );
+		
+		if( !empty( $query->row_array() ) ){
+			return true;
+		}
+		return false;
+	}
+/*=========================================================================*/
+
+
+/*===============================LOGIN ADMIN=============================*/
+	public function get_user(){
 	$query =  $this->db->get_where('adminpadus', array (
 												'email'=>$this->input->post('email'),
 												'password'=>MD5($this->input->post('password'))
@@ -41,8 +126,7 @@ public function get_user(){
 												));
 	return $query->result_array();
 	}
-
-
+/*=========================================================================*/
 
 
 }

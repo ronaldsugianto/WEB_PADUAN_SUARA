@@ -25,18 +25,17 @@
                                             <th>Nama</th>
                                             <th>Jurusan</th>
                                             <th>Email</th>
-                                            <th>Status</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                     <?php foreach ($akun as $perakun) { ?>
                                         <tr>
-                                            <th><?= $perakun['nim']; ?></th>
-                                            <th><?= $perakun['nama']; ?></th>
-                                            <th><?= $perakun['jurusan']; ?></th>
-                                            <th><?= $perakun['email']; ?></th>
-                                            <th>Aktiv</th>
+                                           <th><?= $perakun['nim']; ?></th>
+                                           <th><?= $perakun['nama']; ?></th>
+                                           <th><?= $perakun['jurusan']; ?></th>
+                                           <th><?= $perakun['email']; ?></th>
+
                                         </tr>
                                      <?php } ?>
 
@@ -53,8 +52,7 @@
  
             </div>
             <!-- /.row -->
-
-                </div>
+    </div>
     <!-- /#wrapper -->
 
     </x>

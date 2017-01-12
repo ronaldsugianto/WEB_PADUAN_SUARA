@@ -60,62 +60,96 @@
 
 
     <!-- KEGIATAN UKM Section -->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container">
+
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+           
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">KEGIATAN UKM</h2>
                     <h3 class="section-subheading text-muted">Banyak Kegiatan yang Bisa Kamu Ikuti.</h3>
                 </div>
             </div>
+
+
+<!-- PLAGIN KEGIATAN UKM ............................................ -->
+
+<br>
+<!-- .......................................................................... -->
+
+        <div class="row">
+            <div class="col-md-5 col-sm-6 portfolio-item">
+                
+                <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.8&appId=1431174593584141";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+            <center>
+            <div class="fb-page" data-href="https://www.facebook.com/OurVoiceOutTeam" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/OurVoiceOutTeam" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OurVoiceOutTeam">Our VOICE Our Team</a></blockquote></div>
+            </center>
+            </div>
+
+            <div class="col-md-7 col-sm-6 portfolio-item">
+                  <div id="wrapper">
+                    <!-- /.row -->
             <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-                            </div>
+                <div class="col-lg-12">
+                    <div class="panel1 panel-default">
+                        <div class="panel-heading">
+                         <h3>   DAFTAR KEGIATAN YANG BERJALAN </h3>
                         </div>
-                        <img src="asset/img/imgpadus/padus1.1.jpg" class="img-responsive img" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Acara Wisuda calon alumni</h4>
-                        <p class="text-muted">Sangat mengasyikkan \^o^/</p>
-                    </div>
-                </div>
+                        <br>
+                        <!-- /.panel-heading -->
+                    <div class="panel-heading">
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                         <th><center>Waktu</center></th>
+                                         <th><center>Tanggal</center></th>
+                                         <th>Kegiatan</th>
+                                         <th>Tempat Kegiatan</th>
+                                        </tr>
+                                    </thead>
 
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-                            </div>
-                        </div>
-                        <img src="asset/img/imgpadus/padus2.jpg" class="img-responsive img" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Lomba - Lomba Paduan Suara</h4>
-                        <p class="text-muted">Sangat menantang~</p>
-                    </div>
-                </div>
+                                    <tbody>
 
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                                   <?php foreach ($akun as $perakun) { ?>
+                                        <tr>
+                                           <th><center><?= $perakun['waktu']; ?></center></th>
+                                           <th><center><?= $perakun['tanggal']; ?></center></th>
+                                           <th><?= $perakun['kegiatan']; ?></th>
+                                           <th><?= $perakun['tempat']; ?></th>
+                                        </tr>
+                                     <?php } ?> 
+
+                                    </tbody>
+
+                                </table>
                             </div>
+                            <!-- /.table-responsive -->
                         </div>
-                        <img src="asset/img/imgpadus/padus4.jpg" class="img-responsive img" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Acara Dies Natalis</h4>
-                        <p class="text-muted">We loooove it !</p>
+                        <!-- /.panel-body -->
                     </div>
+                    </div>
+                    <!-- /.panel -->
                 </div>
+ 
+            </div>
+            <!-- /.row -->
+    </div>
+    <!-- /#wrapper -->
             </div>
         </div>
-    </section>
+
+    </div>
+</section>
 
 
 
@@ -278,124 +312,8 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-        <div class="fb-comments" data-href="https://www.facebook.com/groups/732325093611036/" data-width="100%" data-numposts="5"></div>
-
-
-
-    <!-- BAGIAN COMMENT BOX -->
-
-
-
-
-
-
-
-    <!-- POOPUP KEGIATAN -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Acara Wisuda calon alumni</h2>
-                                <p class="item-intro text-muted">Sangat mengasyikkan \^o^/</p>
-                                <img class="img-responsive img-centered" src="asset/img/imgpadus/padus1.1.jpg" alt="">
-                                <p>UKM PaDus turut berpartisipasi dalam memeriahkan acara wisuda STMIK Kharisma Makassar. Kami bangga dapat memberi penampilan terbaik untuk kakak - kakak kami yang akan lulus.</p>
-                            
-                                <ul class="list-inline">
-                                    <li>Date: 00/??/0000</li>
-
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Lomba - Lomba Paduan Suara</h2>
-                                <p class="item-intro text-muted">Sangat menantang~</p>
-                                <img class="img-responsive img-centered" src="asset/img/imgpadus/padus2.jpg" alt="">
-                                <p>Kami juga mengikuti berbagai macam lomba seni paduan suara. kami berusaha menampilkan yang terbaik dan membanggakan almamater kampus.</p>
-
-                                <ul class="list-inline">
-                                    <li>Date: 00/??/0000</li>
-
-                                </ul>
-
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Acara Dies Natalis</h2>
-                                <p class="item-intro text-muted">We loooove it !</p>
-                                <img class="img-responsive img-centered" src="asset/img/imgpadus/padus4.jpg" alt="">
-                                <p>Kami turut berpartisipasi dalam acara Dies Natalis STMIK Kharisma sebagai pembuka acara dengan membawakan lagu Mars STMIK Kharisma.</p>
-
-                                <ul class="list-inline">
-                                    <li>Date: 00/??/0000</li>
-
-                                </ul>
-
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
+        <div class="fb-comments" data-href="https://www.facebook.com/profile.php?id=100014975911637" data-width="100%" data-numposts="5"></div>
+    <!-- ***************************************************** -->
 
             </div>
         </div>

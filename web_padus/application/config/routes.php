@@ -1,27 +1,37 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/*  HALAMAN LOGIN DAN SIGNUP  */
+/*  HALAMAN LOGIN DAN halaman awal  */
 $route['default_controller'] = 'homepage';
 $route['loginadmin'] = 'loginadmin';
 
 
-
+/*****halaman web padus*****/
 $route['home'] = 'home';
-
 $route['point'] = 'point';
 $route['songlist'] = 'songlist';
-$route['login'] = 'akun/login';
+/***********************/
 
+/***********ANGGOTA MENDAFTAR******************/
 $route['pendaftaran'] = 'Akun/pendaftaran';
+$route['anggota'] = 'anggota';
+/**********************************************/
 
 /***********AJAX******************/
-$route['ajax/ceknama'] = 'ajax/ceknamaanggota';
+$route['ajax/cekemail'] = 'ajax/cekemailanggota';
+$route['ajax/ceknim'] = 'ajax/ceknimnim';
+
 /********************************/
 
-$route['anggota'] = 'anggota';
+/***********ADMIN******************/
+$route['login'] = 'akun/login';
+$route['editanggota'] = 'editanggota';
+$route['editpoint'] = 'editpoint';
+$route['uploadkegiatan'] = 'uploadkegiatan';
+$route['editkegiatan'] = 'editkegiatan';
 
 
+/*********************************/
 
 
 $route['404_override'] = '';

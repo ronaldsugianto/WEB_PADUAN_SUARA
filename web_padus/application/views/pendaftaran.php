@@ -9,37 +9,38 @@
 
 <br><br><br><br>
 <section id="Pendaftaran" >
-   <div class="container marke
-   ting">
+   <div class="container marketing">
       <!-- START THE FEAETTES -->
  <legend>Form Pendaftaran Anggota Baru</legend>
     <hr class="music">
     <br>
     <br>
-      <form class="form-horizontal" method="post" action="<?= base_url()?>pendaftaran">
+      <form class="form-horizontal" method="post" action="<?= base_url()?>pendaftaran" >
   <fieldset>
 
     <div class="form-group">
       <label type="name" for="inputNama" class="col-lg-2 control-label">Nama</label>
       <div class="col-lg-5">
-        <input class="form-control" name='nama' placeholder="Nama Lengkap" type="text" id="nama" required="required">
-    <p id="warning_nama"> </p>
+        <input class="form-control" name='nama' placeholder="Nama Lengkap" type="text" required="required">
+  
       </div>
     </div>
 
 
-
     <div class="form-group">
-      <label fotionNIM" class="col-lg-2 control-label" >NIM</label>
+      <label class="col-lg-2 control-label" >NIM</label>
       <div class="col-lg-5">
-        <input class="form-control" name='nim' placeholder="NIM" type="text" required="required">
+       <input class="form-control" name='nim' placeholder="NIM" type="text" id="nim" required="required">
+<!-- BAGIAN AJAX -->   
+   <p id="warning_nim"> </p>
+<!-- ============ -->   
       </div>
     </div>
 
     <div class="form-group">
-      <label for="agama" class="col-lg-2 control-label" required="required">Jurusan</label>
+      <label  class="col-lg-2 control-label" >Jurusan</label>
       <div class="col-lg-3">
-        <select class="form-control" name='jurusan'>
+        <select class="form-control" name='jurusan' required="required">
           <option value="Sistem Informasi">Sistem Informasi</option>
           <option value="Teknik Informatika" >Teknik Informatika</option>
           <option value="Manajemen Informatika">Manajemen Informatika</option>
@@ -47,11 +48,17 @@
         </select>
       </div>
     </div>
+
+
     <div class="form-group">
-      <label for="inputemail" class="col-lg-2 control-label">Email</label>
+      <label  class="col-lg-2 control-label">Email</label>
       <div class="col-lg-5">
-        <input type="email" class="form-control" name='email' placeholder="Email Active" type="text" required="required">
+        <input type="email" class="form-control" name='email' placeholder="Email Active" id="email" required="required">
+   
+   <p id="warning_email"> </p>
+
       </div>
+       
     </div>
  
     <div class="panel panel-primary">
@@ -66,7 +73,7 @@
    </div>
   </div>
     <div class="form-group">
-      <label for="inputPassword" class="col-lg-2 control-label"></label>
+      <label  class="col-lg-2 control-label"></label>
       <div class="col-lg-10">
         <div class="checkbox">
           <label>

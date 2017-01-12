@@ -10,14 +10,27 @@ class Ajax extends CI_Controller {
     }	
 
 
-	function ceknamaanggota(){
-		 if( $this->user_model->nama_sudah_terdaftar( $this->input->post('namaanggotanya') ) )
+
+
+	public function cekemailanggota(){
+			
+		 if( $this->Akun_model->email_sudah_terdaftar( $this->input->post('emailanggotanya') ) )
 		 { echo "1"; }
    		 else 
    		 { echo "0"; }
-
-
 	}
+
+	public function ceknimnim(){
+	
+		 if( $this->Akun_model->nim_sudah_terdaftar( $this->input->post('nimanggotanya') ) )
+		 { echo "1"; }
+   		 else 
+   		 { echo "0"; }
+	}
+
+
+
+
 }
 
 ?>

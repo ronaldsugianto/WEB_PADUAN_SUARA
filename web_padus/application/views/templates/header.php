@@ -12,10 +12,10 @@
     <title>Home Web Padus</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="asset/css/bootstrap.css" rel="stylesheet">
+    <link href="<?= base_url()?>asset/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="asset/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url()?>asset/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -23,10 +23,10 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="asset/css/agency.css"                     rel="stylesheet">
-    <link href="asset/css/style.css"      type="text/css" rel="stylesheet" >
-    <link href="asset/css/menutambah.css" type="text/css" rel="stylesheet"  >
-    <link href="asset/css/animate.css"                    rel="stylesheet">
+    <link href="<?= base_url()?>asset/css/agency.css"                     rel="stylesheet">
+    <link href="<?= base_url()?>asset/css/style.css"      type="text/css" rel="stylesheet" >
+    <link href="<?= base_url()?>asset/css/menutambah.css" type="text/css" rel="stylesheet"  >
+    <link href="<?= base_url()?>asset/css/animate.css"                    rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -35,4 +35,3 @@
     <![endif]-->
 
 </head>
-
