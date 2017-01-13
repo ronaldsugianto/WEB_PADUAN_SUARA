@@ -21,40 +21,26 @@
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th>No</th>
                                             <th>Nim</th>
                                             <th>Nama</th>
                                             <th>Jurusan</th>
-                                            <th>Angkatan</th>
-                                            <th>Status</th>
+                                            <th>Email</th>
                                         </tr>
                                     </thead>
+
                                     <tbody>
+                                    <?php foreach ($akun as $perakun) { ?>
                                         <tr>
-                                            <td>1</td>
-                                            <th>51014021</th>
-                                            <th>Ronald sugiato</th>
-                                            <th>sistem informasi</th>
-                                            <th>2014</th>
-                                            <th>Aktiv</th>
+                                           <th><?= $perakun['nim']; ?></th>
+                                           <th><?= $perakun['nama']; ?></th>
+                                           <th><?= $perakun['jurusan']; ?></th>
+                                           <th><?= $perakun['email']; ?></th>
+
                                         </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <th>51014000</th>
-                                            <th>ela</th>
-                                            <th>Sistem informasi</th>
-                                            <th>2014</th>
-                                            <th>Aktiv</th>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <th>51014000</th>
-                                            <th>lala</th>
-                                            <th>Teknik inromatika</th>
-                                            <th>2014</th>
-                                            <th>Aktiv</th>
-                                        </tr>
+                                     <?php } ?>
+
                                     </tbody>
+
                                 </table>
                             </div>
                             <!-- /.table-responsive -->
@@ -66,8 +52,7 @@
  
             </div>
             <!-- /.row -->
-
-                </div>
+    </div>
     <!-- /#wrapper -->
 
     </x>
