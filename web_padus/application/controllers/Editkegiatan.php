@@ -8,7 +8,7 @@ public function __construct(){
 	$this->load->model('Akun_model');
 }
 	public function index()
-	{
+	{if(!isset($_SESSION['login'])) redirect(base_url().'loginadmin');
 	   $data['akun'] = $this->Akun_model->view_kegiatan(); 
 		$this->load->view('templates/header');	
 		$data['judul'] = "Welcome To Halaman Admin, Edit Kegiatan !";

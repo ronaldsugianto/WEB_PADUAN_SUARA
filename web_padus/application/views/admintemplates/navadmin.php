@@ -23,8 +23,7 @@
 
                     <li>
                     <a href="#logout" class="portfolio-link" data-toggle="modal">
-                    <i class="fa fa-sign-out" aria-hidden="true"></i>  Log Out</a>
-                       
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>  Log Out</a>     
                     </li>
 
    </ul>
@@ -58,7 +57,7 @@
   
                         <div class="col-xs-12 col-md-6">
                             <br>
-                            <a href="homepage" class="btn btn-success btn-block btn-lg"> <i class="fa fa-check" aria-hidden="true"></i> Yes</a>
+                            <a href="user/logout" class="btn btn-success btn-block btn-lg"> <i class="fa fa-check" aria-hidden="true"></i> Yes</a>
                         </div>
            
                     </div>            

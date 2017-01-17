@@ -25,55 +25,52 @@
 	                                     <th>nama</th>
 	                                     <th><center>Jumlah Point</center></th>
                                          <th><center>+Point</center></th>
-	                                     <th><center>Status</center></th>
                                          <th><center>Button</center></th>   
                                        </tr> 
                                     </thead>
 
                                     <tbody>
                                     <?php foreach ($akun as $perakun) { ?>
+                                    <form action="updatepoint/<?=$perakun['nim'];?>" method="post">
                                     <tr>
                                       
-                                      <th>
+                                      <td>
                                         <?= $perakun['nim']; ?>
-                                      </th>
+                                      </td>
                                       
-                                      <th>
+                                      <td>
                                         <?= $perakun['nama']; ?>     
-                                      </th>
+                                      </td>
                                       
-                                      <th><center>
+                                      <td><center>
                                         <?= $perakun['point']; ?>   
-                                      </center></th>
+                                      </center></td>
                                       
-                                      <th><center>
+                                      <td><center>
                                         <input class="form-control1" name='point' placeholder="input" type="text" >
-                                      </center></th>
+                                      </center></td>
                                             
-                                      <th><center>
-                                        <select class="form-control2" name='status' required="required">
-                                         <option value="Aktiv">Aktiv</option>
-                                         <option value="Tidak Aktiv" >Tidak Aktiv</option>
-                                        </select>
-                                      </center></th>
-                                         
-                                      <th><center>
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-check" aria-hidden="true"></i>
-                                        </button>    
-                                      </center> </th> 
 
+                                         
+                                      <td><center>
+                                        <button type="submit" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-check" aria-hidden="true"></i>
+                                        </button>    
+                                      </center> </td> 
+
+                                      
                                     </tr>
+                                    </form>
                                     <?php } ?>
                                     </tbody>
 
-                                    <tfoot>
-                                    <tr>
+                                    <!--  <tfoot>
+                                  <tr>
                                         <th></th>
                                         <th><i>0 People</i></th>
                                         <th></th>
                                         <th></th>
                                     </tr>
-                                    </tfoot>
+                                    </tfoot>-->
 
                                 </table>
                             </div>

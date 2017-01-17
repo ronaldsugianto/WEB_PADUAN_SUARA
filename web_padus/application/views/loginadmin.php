@@ -2,6 +2,22 @@
 <br><br><br><br>
 <div class="container">
 
+        <?php
+        switch( @$_SESSION['notif'] ){
+            case 1:
+            echo "<div class='alert alert-danger' role='alert'>
+            <span class='fa fa-exclamation-triangle fa-2x' aria-hidden='true'></span>
+            Sign-in Gagal:
+            Cek kembali Email dan password anda!
+            </div>";
+            session_destroy();
+            break;
+
+        }
+        ?>
+
+
+
 <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
         <form role="form" method="post" action="login">

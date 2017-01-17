@@ -9,6 +9,7 @@ public function __construct(){
 }
 	public function index()
 	{
+		if(!isset($_SESSION['login'])) redirect(base_url().'loginadmin');
 	   $data['akun'] = $this->Akun_model->view_user(); 
 		$this->load->view('templates/header');	
 		$data['judul'] = "Welcome To Halaman Admin Upload point !";
@@ -23,5 +24,9 @@ public function __construct(){
 		$this->load->view('admintemplates/editpoint', $data);
 
 		$this->load->view('templates/footer');			
+	}
+	public function updatepoint($nim){
+		$this->Akun_model->updatepoint($nim, $this->input->post('point'));
+		redirect('editpoint');
 	}
 }

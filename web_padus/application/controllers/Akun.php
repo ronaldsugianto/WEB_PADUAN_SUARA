@@ -89,10 +89,9 @@ $data['kegiatanukm'] = $this->Akun_model->edit_datakg($where,'kegiatanukm')->res
 	}
 /*=======================================================================*/
 
-
 /*=====================UPLOAD KEGIATAN==============================*/
 	public function upload(){
-		$this->Akun_model->insert_kegiatan(); //
+		$this->Akun_model->insert_kegiatan(); 
 		redirect('editkegiatan');
 	}
 /*=========================================================================*/
@@ -106,16 +105,23 @@ $data['kegiatanukm'] = $this->Akun_model->edit_datakg($where,'kegiatanukm')->res
 /*==========================================================================*/
 
 
-/*==========================LOGIN ADMIN====================================*/
+// ==========================LOGIN ADMIN===================================
 	public function login(){
 
-		if ($user= $this->Akun_model->get_user() )
-			{ redirect('editanggota'); }
-		else 
-			{ redirect('index.php'); }
+		if ($user= $this->Akun_model->get_user() ){
+			$_SESSION['login'] = 1;
+			redirect('editanggota');
+		}else{
+			$_SESSION['notif'] = 1;
+			redirect('loginadmin');
+		}
 	}
-/*=========================================================================*/
 
-
+	//========logout==============
+	public function logout(){
+		session_destroy();
+		redirect('loginadmin');
+	}
+// ========================================================================
 
 }

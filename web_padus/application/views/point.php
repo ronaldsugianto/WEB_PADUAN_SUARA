@@ -24,7 +24,6 @@
 											<th>Nim</th>
 	                                        <th>Nama</th>
 	                                        <th>Point</th>
-	                                        <th>Status</th>
                                         </tr>
                                     </thead>
 
@@ -34,20 +33,19 @@
                                             <th><?= $perakun['nim']; ?></th>
                                             <th><?= $perakun['nama']; ?></th>
                                             <th><?= $perakun['point']; ?></th>
-                                            <th><?= $perakun['status']; ?></th>
                                         </tr>
                                      <?php } ?>
 
                                     </tbody>
 
-                                    <tfoot>
+                                 <!--   <tfoot>
                                     <tr>
                                         <th></th>
                                         <th><i>999 Anggota</i></th>
                                         <th></th>
                                         <th></th>
                                     </tr>
-                                    </tfoot>
+                                    </tfoot>-->
 
                                 </table>
                             </div>

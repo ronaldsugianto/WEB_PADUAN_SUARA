@@ -124,9 +124,21 @@ public function insert_kegiatan()
 												'password'=>MD5($this->input->post('password'))
 												
 												));
+
 	return $query->result_array();
 	}
 /*=========================================================================*/
+
+/*==========================TAMBAH POINT==========================*/
+	function updatepoint($nim, $point){
+
+		$this->db->where('nim',$nim);
+		$nilai = 'point+'.$point;
+		
+		$this->db->set('point', $nilai, FALSE);
+		$this->db->update('anggotaukm');
+	}
+/*=============================================================*/
 
 
 }
