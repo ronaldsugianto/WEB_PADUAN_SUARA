@@ -11,7 +11,7 @@
     <br><br><br><br><br><br>
 <div class="container marketing">
       <!-- START THE FEAETTES -->
- <legend> Tambah kegiatan </legend>
+ <legend> Edit kegiatan </legend>
     <hr class="music">
     
     <br>
@@ -59,7 +59,7 @@
       <div class="col-lg-10">
         <div class="checkbox">
           <label>
-            <input type="checkbox" required="required" > Saya setuju menambah kegiatan ini
+            <input type="checkbox" required="required" > Saya setuju mengedit kegiatan ini
           </label>
         </div>
     </div>
