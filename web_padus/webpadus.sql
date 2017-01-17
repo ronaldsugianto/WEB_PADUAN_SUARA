@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 12 Jan 2017 pada 09.51
+-- Generation Time: 17 Jan 2017 pada 06.22
 -- Versi Server: 10.1.19-MariaDB
--- PHP Version: 5.5.38
+-- PHP Version: 7.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -66,8 +66,8 @@ INSERT INTO `anggotaukm` (`id`, `nim`, `nama`, `jurusan`, `email`, `point`, `sta
 (12, 51014008, 'elza juliani', 'Sistem Informasi', 'felicia_elza@yahoo.com', 20, 'Aktiv'),
 (13, 51014011, 'Giovanno michael ', 'Sistem Informasi', 'giovanno_michael_fransisco@yahoo.co.id', 10, 'Aktiv'),
 (18, 51018080, 'pinkan jumbo', 'Sistem Informasi', 'pinkan@mambo.com', 0, ''),
-(20, 51014021, 'Ronald Sugianto', 'Sistem Informasi', 'ronaldsugianto_15@kharisma.ac.id', 0, ''),
-(21, 5101111, 'Sasaaaaasdfsdf', 'Sistem Informasi', 'RRRRR@SDFassdfsd', 0, '');
+(20, 51014021, 'Ronald Sugianto', 'Sistem Informasi', 'ronaldsugianto_15@kharisma.ac.id', 50, ''),
+(21, 5101111, 'dimass', 'Sistem Informasi', 'dimass@gmail.com', 20, '');
 
 -- --------------------------------------------------------
 
@@ -91,8 +91,8 @@ INSERT INTO `kegiatanukm` (`idkegiatan`, `waktu`, `tanggal`, `kegiatan`, `tempat
 (1, '12:00-14:00', '12-des-2016', 'mammamam', 'sadfasdf'),
 (2, '11:00-14:00', '12-des-2017', 'Malam minggu bersama', 'Mal ratuindah '),
 (3, '10:00-12:00', '12-januari-2016', 'bernyanyi bersama', 'stimik kharisma makassar'),
-(4, 'sdfasd', 'asdfasdgas', 'dgasdfa', 'asdfadsf'),
-(8, 'rr1', 'rrr1', 'rrr1', 'rrr1');
+(4, '12:00-14:00', '12-april-2017', 'mengisi acara musik', 'Mal. GTC'),
+(8, '15:00-17:00', '29-april-2016', 'evaluasi kinerja anggoraUkm', 'stimik kharisma makassar');
 
 --
 -- Indexes for dumped tables
