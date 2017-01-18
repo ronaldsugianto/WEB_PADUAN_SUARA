@@ -78,7 +78,7 @@
 <!-- .......................................................................... -->
 
         <div class="row">
-            <div class="col-md-5 col-sm-6 portfolio-item">
+            <div class="col-md-4 col-sm-6 portfolio-item">
                 
                 <div id="fb-root"></div>
             <script>(function(d, s, id) {
@@ -94,7 +94,7 @@
             </center>
             </div>
 
-            <div class="col-md-7 col-sm-6 portfolio-item">
+            <div class="col-md-8 col-sm-6 portfolio-item">
                   <div id="wrapper">
                     <!-- /.row -->
             <div class="row">
@@ -112,7 +112,7 @@
                                     <thead>
                                         <tr>
                                          <th><center>Waktu</center></th>
-                                         <th><center>Tanggal</center></th>
+                                         <th>Tanggal</th>
                                          <th>Kegiatan</th>
                                          <th>Tempat Kegiatan</th>
                                         </tr>
@@ -123,7 +123,7 @@
                                    <?php foreach ($akun as $perakun) { ?>
                                         <tr>
                                            <th><center><?= $perakun['waktu']; ?></center></th>
-                                           <th><center><?= $perakun['tanggal']; ?></center></th>
+                                           <th><?= $perakun['tanggal']; ?></th>
                                            <th><?= $perakun['kegiatan']; ?></th>
                                            <th><?= $perakun['tempat']; ?></th>
                                         </tr>

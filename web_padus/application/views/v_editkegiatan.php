@@ -69,8 +69,7 @@
     <br>
     <div class="form-group">
       <div class="col-lg-10 col-lg-offset-2">
-        <a href="editkegiatan" class="btn btn-batal"><i class="fa fa-times" aria-hidden="true"></i> Batal</a>
-        <button type="submit"  class="btn btn-daftar"><i class="fa fa-check" aria-hidden="true"></i> Tambahkan</button>
+        <button type="submit"  class="btn btn-daftar"><i class="fa fa-check" aria-hidden="true"></i> Edit</button>
       </div>
     </div>
   </fieldset>

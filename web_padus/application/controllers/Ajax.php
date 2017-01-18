@@ -14,7 +14,7 @@ class Ajax extends CI_Controller {
 
 	public function cekemailanggota(){
 			
-		 if( $this->Akun_model->email_sudah_terdaftar( $this->input->post('emailanggotanya') ) )
+		 if( $this->Akun_model->email_sudah_terdaftar( $this->input->get('emailanggotanya') ) )
 		 { echo "1"; }
    		 else 
    		 { echo "0"; }
@@ -22,7 +22,7 @@ class Ajax extends CI_Controller {
 
 	public function ceknimnim(){
 	
-		 if( $this->Akun_model->nim_sudah_terdaftar( $this->input->post('nimanggotanya') ) )
+		 if( $this->Akun_model->nim_sudah_terdaftar( $this->input->get('nimanggotanya') ) )
 		 { echo "1"; }
    		 else 
    		 { echo "0"; }

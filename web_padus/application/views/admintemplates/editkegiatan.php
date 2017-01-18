@@ -23,9 +23,9 @@
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                         <th>id</th>
+                          
                                          <th><center>Waktu</center></th>
-                                         <th><center>Tanggal</center></th>
+                                         <th>Tanggal</th>
                                          <th>Kegiatan</th>
                                          <th>Tempat Kegiatan</th>
                                         </tr>
@@ -34,9 +34,9 @@
                                     <tbody>
                                     <?php foreach ($akun as $perakun) { ?>
                                       <tr>
-                                       <th><center><?= $perakun['idkegiatan']; ?></center></th>
+
                                        <th><center><?= $perakun['waktu']; ?></center></th>
-                                       <th><center><?= $perakun['tanggal']; ?></center></th>
+                                       <th><?= $perakun['tanggal']; ?></th>
                                        <th><?= $perakun['kegiatan']; ?></th>
                                        <th><?= $perakun['tempat']; ?></th>
                                       <th>

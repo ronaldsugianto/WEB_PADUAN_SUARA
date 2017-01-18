@@ -120,7 +120,7 @@ $data['kegiatanukm'] = $this->Akun_model->edit_datakg($where,'kegiatanukm')->res
 	//========logout==============
 	public function logout(){
 		session_destroy();
-		redirect('loginadmin');
+		redirect('homepage');
 	}
 // ========================================================================
 

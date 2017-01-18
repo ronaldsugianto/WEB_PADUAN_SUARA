@@ -10,7 +10,7 @@ $("#email").change( function(){
                    $(":submit").attr("disabled", true); } 
         	else 
         		{ $("#warning_email").html( "email OK" );
-                  $(":submit").removeAttr("disabled"); }	
+                  $(":submit").removeAttr("disabled");}	
         }
     });	
 });
@@ -24,10 +24,10 @@ $("#nim").change( function(){
         success: function(result){
             if( result =='1' )  
                 { $("#warning_nim").html( "nim telah di gunakan" );
-                  $(":submit").attr("disabled", true); } 
+                 $(":submit").attr("disabled", true);} 
             else 
                 { $("#warning_nim").html( "nim OK" );
-                  $(":submit").removeAttr("disabled"); }    
+                   $(":submit").removeAttr("disabled");}    
         }
     }); 
 });
