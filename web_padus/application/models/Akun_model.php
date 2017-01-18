@@ -107,6 +107,7 @@ public function insert_kegiatan()
 	}
 
 	public function nim_sudah_terdaftar( $nim ) {
+
 		$query = $this->db->get_where( 'anggotaukm', array( 'nim' => $nim) );
 		
 		if( !empty( $query->row_array() ) ){
