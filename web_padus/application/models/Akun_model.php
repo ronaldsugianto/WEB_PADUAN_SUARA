@@ -102,7 +102,7 @@ public function insert_kegiatan()
     if( !empty( $query->row_array() ) ) {
 	            return true;
 	        }
-	        return false;                    
+	       return false;                    
 
 	}
 
