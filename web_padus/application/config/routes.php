@@ -34,7 +34,7 @@ $route['editpoint'] = 'editpoint';
 $route['uploadkegiatan'] = 'uploadkegiatan';
 $route['editkegiatan'] = 'editkegiatan';
 /*********************************/
-
+$route['editorganisasi'] = 'editorganisasi';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

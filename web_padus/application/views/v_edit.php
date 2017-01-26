@@ -35,7 +35,7 @@
     <div class="form-group">
       <label fotionNIM" class="col-lg-2 control-label" >NIM</label>
       <div class="col-lg-5">
-        <input class="form-control" name='nim' value="<?= $perakun->nim ?>" placeholder="NIM" type="text"  disabled>
+        <input class="form-control" name='nim' value="<?= $perakun->nim ?>" placeholder="NIM" type="text" >
       </div>
     </div>
 

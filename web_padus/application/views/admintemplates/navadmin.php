@@ -3,13 +3,18 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="editanggota"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Anggota</a>
+                        <a class="page-scroll" href="editanggota"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Anggota</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="editpoint"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Point </a>
+                        <a class="page-scroll" href="editpoint"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Point </a>
                     </li>
+
                     <li>
-                        <a class="page-scroll" href="editkegiatan"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Kegiatan </a>
+                        <a class="page-scroll" href="editorganisasi"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Organisasi</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="editkegiatan"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Kegiatan </a>
                     </li>
 
                     <li>
