@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/WEB_PADUAN_SUARA/web_padus';
+$config['base_url'] = 'http://ourvoice.local/';
 
 
 
