@@ -6,7 +6,7 @@ class Homepage extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('TemplatesLogin/headerlogin');
+		$this->load->view('templateslogin/headerlogin');
 
 		$this->load->view('Homepage');
 

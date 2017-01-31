@@ -99,7 +99,12 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Bertugas mengurus kegiatan UKM dan membuat UKM menjadi Aktiv dalam mengikuti berbagai kegiatan.</p>
+                <h4>
+                    <p class="large text-muted">Bertugas mengurus kegiatan UKM dan membuat UKM menjadi Aktiv dalam mengikuti berbagai kegiatan.</p> <br> </h4>
+
+    <button class="btn btn-success btn-block btn-lg" ype="submit" value="Simpan"> <i class="fa fa-check" aria-hidden="true"></i> Save Perubahan </button>
+                    
+
                 </div>
             </div>
         </div>
