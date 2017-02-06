@@ -1,7 +1,7 @@
 
 $("#email").change( function(){
    $.ajax({
-        url: "/WEB_PADUAN_SUARA/web_padus/ajax/cekemail",
+        url: "http://ourvoice.local/ajax/cekemail",
         data: { "emailanggotanya" : $(this).val() },
         method: "POST",
         success: function(result){
@@ -18,7 +18,7 @@ $("#email").change( function(){
 
 $("#nim").change( function(){
    $.ajax({
-        url: "/WEB_PADUAN_SUARA/web_padus/ajax/ceknim",
+        url: "http://ourvoice.local/ajax/ceknim",
         data: { "nimanggotanya" : $(this).val() },
         method: "POST",
         success: function(result){
