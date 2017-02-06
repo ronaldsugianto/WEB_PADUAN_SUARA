@@ -8,7 +8,7 @@ class Loginadmin extends CI_Controller {
 	{
 		if(isset($_SESSION['login'])) redirect(base_url().'editanggota');
 
-		$this->load->view('templatesLogin/headerlogin');
+		$this->load->view('templateslogin/headerlogin');
 
 		$this->load->view('loginadmin');
 
