@@ -55,8 +55,6 @@ $data['anggotaukm'] = $this->Akun_model->edit_data($where,'anggotaukm')->result(
 /*======================= ================================================*/
 
 
-
-
 /*======================= EDIT KEGIATAN=========================*/
 	public function editkg($idkegiatan){
 	$where = array('idkegiatan' => $idkegiatan);

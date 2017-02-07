@@ -224,7 +224,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                               <a href="http://kharisma.ac.id/" target="_blank" class="acampus"> <h4>Menjadi Bagian 
+                               <a href="http://siska4.kharisma.ac.id/pmb" target="_blank" class="acampus"> <h4>Menjadi Bagian 
                                     <br>campus 
                                     <br> Kami!
                                     </h4>

@@ -60,7 +60,6 @@ public function insert_user()
 	}	
 /*======================================================================*/
 
-
 /*====================upload KEGIATAN============================= */
 public function insert_kegiatan()
 	{

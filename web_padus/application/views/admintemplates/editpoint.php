@@ -47,7 +47,7 @@
                                       </center></td>
                                       
                                       <td><center>
-                                        <input class="form-control1" name='point' placeholder="input" type="text" >
+                                        <input class="form-control1" required="required" name='point' placeholder="input" type="text" > 
                                       </center></td>
                                             
 
