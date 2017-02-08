@@ -25,4 +25,17 @@ public function __construct(){
 
 		$this->load->view('templates/footer');			
 	}
+
+
+// ================================================ Function Ketua
+
+	public function update_ketua()
+	{
+		move_uploaded_file($_FILES['foto']['tmp_name'], '../asset/foto/ketua.jpg');
+		redirect( base_url().'editorganisasi');
+	}
+
+// ================================================ 
+
+
 }
