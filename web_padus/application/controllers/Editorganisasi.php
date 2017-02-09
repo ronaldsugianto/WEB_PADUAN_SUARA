@@ -31,8 +31,20 @@ public function __construct(){
 
 	public function update_ketua()
 	{
-		move_uploaded_file($_FILES['foto']['tmp_name'], '../asset/foto/ketua.jpg');
-		redirect( base_url().'editorganisasi');
+		move_uploaded_file($_FILES['foto']['tmp_name'], './asset/foto/ketua.jpg');
+		 redirect( base_url().'editorganisasi');
+	}
+
+	public function update_sekertaris()
+	{
+		move_uploaded_file($_FILES['foto']['tmp_name'], './asset/foto/sekertaris.jpg');
+		 redirect( base_url().'editorganisasi');
+	}
+
+	public function update_wakilketua()
+	{
+		move_uploaded_file($_FILES['foto']['tmp_name'], './asset/foto/wakilketua.jpg');
+		 redirect( base_url().'editorganisasi');
 	}
 
 // ================================================ 

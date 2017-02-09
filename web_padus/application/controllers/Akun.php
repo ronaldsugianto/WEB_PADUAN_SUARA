@@ -55,6 +55,43 @@ $data['anggotaukm'] = $this->Akun_model->edit_data($where,'anggotaukm')->result(
 /*======================= ================================================*/
 
 
+/*======================= EDIT ORGANISASI =========================*/
+
+
+
+	function updateorg(){
+		$id = $this->input->post('id');
+		$nama = $this->input->post('nama');
+		$jabatan = $this->input->post('jabatan');
+		$link = $this->input->post('link');
+		$linktwit = $this->input->post('linktwit');
+
+		$data = array(
+			'id' => $id,
+			'nama' => $nama,
+			'jabatan' => $jabatan,
+			'link' => $link,
+			'linktwit' => $linktwit			
+		);
+
+		$where = array(
+			'id' => $id
+		);
+
+		$this->Akun_model->update_dataorg($where,$data,'organisasi');
+		redirect('editorganisasi');
+	}
+/*======================= ================================================*/
+
+
+
+
+
+
+
+
+
+
 /*======================= EDIT KEGIATAN=========================*/
 	public function editkg($idkegiatan){
 	$where = array('idkegiatan' => $idkegiatan);

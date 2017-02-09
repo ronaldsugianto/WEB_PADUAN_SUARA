@@ -6,6 +6,8 @@ public function __construct(){
 	parent::__construct();
 }
 
+
+
 /*====================pendaftaran ANGGOTA=========================== */
 public function insert_user()
 	{
@@ -47,6 +49,25 @@ public function insert_user()
 		$this->db->update($table,$data);
 	}	
 /*======================================================================*/
+
+/*=====================EDIT DATA ORGANISASI=====================*/
+public function getorganisasi( $id = '0'){
+	if( $id =='0') {
+		$query =  $this->db->get('organisasi');
+		return $query->result_array();
+	} else {
+		$query =  $this->db->get_where('organisasi',['id'=>$id]);
+		return $query->row_array();		
+	}
+}
+
+
+	function update_dataorg($where,$data,$table){
+		$this->db->where($where);
+		$this->db->update($table,$data);
+	}	
+/*======================================================================*/
+
 
 /*=====================EDIT DATA kegiatan=====================*/
 	function edit_datakg($where,$table){		

@@ -244,53 +244,61 @@
     <!-- PENGURUS UKM PADUAN SUARA Section -->
     <section id="team" class="bg-light-gray">
         <div class="container">
+
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Struktur Organisasi</h2>
                     <h3 class="section-subheading text-muted">Pengurus UKM paduan suara.</h3>
                 </div>
             </div>
+
+
             <div class="row">
+
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="asset/img/team/2.2.jpg" class="img-responsive img-circle imgpengurus" alt="">
-                        <h4>???????</h4>
-                        <p class="text-muted">Sekertaris UKM</p>
+                        <img src="asset/foto/ketua.jpg" class="img-responsive img-circle imgpengurus" alt="">
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="asset/foto/sekertaris.jpg" class="img-responsive img-circle imgpengurus alt="">
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="asset/foto/wakilketua.jpg" class="img-responsive img-circle imgpengurus" alt="">
+                    </div>
+                </div>
+
+                <?php 
+                foreach ($this->Akun_model->getorganisasi() as $pengurus) {            
+                ?>
+                <div class="col-sm-4">
+                    <div class="team-member">
+
+                            <h4><?= $pengurus['nama'] ?></h4>
+                            <p class="text-muted"><?= $pengurus['jabatan'] ?></p>
+
                         <ul class="list-inline social-buttons">
-                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <li><a href="<?= $pengurus['linktwit'] ?>" target="_blank"><i class="fa fa-twitter"></i></a>
                             </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <li><a href="<?= $pengurus['link'] ?>" target="_blank"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="asset/img/team/1.1.jpg" class="img-responsive img-circle imgpengurus alt="">
-                        <h4>suwandy sumbogo</h4>
-                        <p class="text-muted">Ketua UKM </p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://web.facebook.com/suwandysumbogo" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="asset/img/team/3.jpg" class="img-responsive img-circle imgpengurus" alt="">
-                        <h4>??????</h4>
-                        <p class="text-muted">Wakil ketua UKM</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                <?php } ?> 
+
+
+
+
+
+        </div>
+        
+
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <p class="large text-muted">Bertugas mengurus kegiatan UKM dan membuat UKM menjadi Aktiv dalam mengikuti berbagai kegiatan.</p>
