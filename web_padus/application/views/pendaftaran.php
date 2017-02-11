@@ -30,7 +30,7 @@
     <div class="form-group">
       <label class="col-lg-2 control-label" >NIM</label>
       <div class="col-lg-5">
-       <input class="form-control" name='nim' placeholder="NIM" type="text" id="nim" required="required">
+       <input class="form-control" name='nim' placeholder="NIM" type="text" id="nim" maxlength="8" Pattern="\d{8}" required="required">
 <!-- BAGIAN AJAX -->   
 <p id="warning_nim"> </p>
 <!-- ============ -->   
