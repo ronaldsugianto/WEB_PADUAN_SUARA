@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.6.4deb1
+-- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: 17 Jan 2017 pada 06.22
--- Versi Server: 10.1.19-MariaDB
--- PHP Version: 7.0.13
+-- Host: localhost:3306
+-- Generation Time: Feb 11, 2017 at 02:09 PM
+-- Server version: 5.7.17-0ubuntu0.16.10.1
+-- PHP Version: 7.0.13-0ubuntu0.16.10.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `webpadus`
+-- Database: `ourvoice`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `adminpadus`
+-- Table structure for table `adminpadus`
 --
 
 CREATE TABLE `adminpadus` (
@@ -34,7 +34,7 @@ CREATE TABLE `adminpadus` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `adminpadus`
+-- Dumping data for table `adminpadus`
 --
 
 INSERT INTO `adminpadus` (`idadmin`, `nama`, `email`, `password`) VALUES
@@ -44,7 +44,7 @@ INSERT INTO `adminpadus` (`idadmin`, `nama`, `email`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `anggotaukm`
+-- Table structure for table `anggotaukm`
 --
 
 CREATE TABLE `anggotaukm` (
@@ -58,21 +58,22 @@ CREATE TABLE `anggotaukm` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `anggotaukm`
+-- Dumping data for table `anggotaukm`
 --
 
 INSERT INTO `anggotaukm` (`id`, `nim`, `nama`, `jurusan`, `email`, `point`, `status`) VALUES
-(11, 51014024, 'Triyanti kusuma bangsa', 'Sistem Informasi', 'fanglikcu@gmail.com', 10, 'Aktiv'),
-(12, 51014008, 'elza juliani', 'Sistem Informasi', 'felicia_elza@yahoo.com', 20, 'Aktiv'),
+(11, 51014024, 'Triyanti kusuma bangsa', 'Sistem Informasi', 'fanglikcu@gmail.com', 15, 'Aktiv'),
+(12, 51014008, 'elza juliani n', 'Sistem Informasi', 'felicia_elza@yahoo.com', 20, 'Aktiv'),
 (13, 51014011, 'Giovanno michael ', 'Sistem Informasi', 'giovanno_michael_fransisco@yahoo.co.id', 10, 'Aktiv'),
-(18, 51018080, 'pinkan jumbo', 'Sistem Informasi', 'pinkan@mambo.com', 0, ''),
-(20, 51014021, 'Ronald Sugianto', 'Sistem Informasi', 'ronaldsugianto_15@kharisma.ac.id', 50, ''),
-(21, 5101111, 'dimass', 'Sistem Informasi', 'dimass@gmail.com', 20, '');
+(21, 51014030, 'dimassk', 'Sistem Informasi', 'dimass@gmail.com', 20, ''),
+(23, 51014021, 'Ronald Sugianto', 'Sistem Informasi', 'ronaldsugianto_15@kharisma.ac.id', 30, ''),
+(24, 51014006, 'melisa mila', 'Sistem Informasi', 'melisa@gmail.com', 20, ''),
+(25, 51014031, 'mikatan', 'Sistem Informasi', 'mika@kima.com', 0, '');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kegiatanukm`
+-- Table structure for table `kegiatanukm`
 --
 
 CREATE TABLE `kegiatanukm` (
@@ -84,15 +85,38 @@ CREATE TABLE `kegiatanukm` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kegiatanukm`
+-- Dumping data for table `kegiatanukm`
 --
 
 INSERT INTO `kegiatanukm` (`idkegiatan`, `waktu`, `tanggal`, `kegiatan`, `tempat`) VALUES
-(1, '12:00-14:00', '12-des-2016', 'mammamam', 'sadfasdf'),
+(1, '12:00-14:00', '12-des-2016', 'ulangtahun ukm', 'stimik kharisma makassar'),
 (2, '11:00-14:00', '12-des-2017', 'Malam minggu bersama', 'Mal ratuindah '),
 (3, '10:00-12:00', '12-januari-2016', 'bernyanyi bersama', 'stimik kharisma makassar'),
 (4, '12:00-14:00', '12-april-2017', 'mengisi acara musik', 'Mal. GTC'),
 (8, '15:00-17:00', '29-april-2016', 'evaluasi kinerja anggoraUkm', 'stimik kharisma makassar');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `organisasi`
+--
+
+CREATE TABLE `organisasi` (
+  `id` tinyint(3) NOT NULL,
+  `nama` varchar(32) NOT NULL,
+  `jabatan` varchar(20) NOT NULL,
+  `linktwit` varchar(60) NOT NULL,
+  `link` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `organisasi`
+--
+
+INSERT INTO `organisasi` (`id`, `nama`, `jabatan`, `linktwit`, `link`) VALUES
+(1, 'Swandy Sumbogo', 'Ketua UKM', '', 'https://www.facebook.com/suwandysumbogo'),
+(2, 'jono', 'Sekertaris UKM', '', ''),
+(3, 'Sugiono', 'Wakil ketua UKM', '', 'https://www.facebook.com/sugianto.ronald');
 
 --
 -- Indexes for dumped tables
@@ -117,6 +141,12 @@ ALTER TABLE `kegiatanukm`
   ADD PRIMARY KEY (`idkegiatan`);
 
 --
+-- Indexes for table `organisasi`
+--
+ALTER TABLE `organisasi`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -129,7 +159,7 @@ ALTER TABLE `adminpadus`
 -- AUTO_INCREMENT for table `anggotaukm`
 --
 ALTER TABLE `anggotaukm`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `kegiatanukm`
 --
