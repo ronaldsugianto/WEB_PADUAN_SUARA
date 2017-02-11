@@ -46,7 +46,7 @@
   </div></div></div>
 
   <!-- Rock-->
-  <div class="col-sm-3 col-xs-12"><div class="album"><img src="asset/img/songlist/rock.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Music Rock</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumrock"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+  <div class="col-sm-3 col-xs-12"><div class="album"><img src="asset/img/songlist/rock.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Music Korean Pop</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumrock"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
 
   <!-- jazz & blues-->
   <div class="col-sm-3 col-xs-12"><div class="album"><img src="asset/img/songlist/jazz.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Music Jazz And Blues</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumjazzblues"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
@@ -54,11 +54,13 @@
   <!-- classical-->
   <div class="col-sm-3 col-xs-12"><div class="album"><img src="asset/img/songlist/classical.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Music Classical</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumclassical"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
 
- <!-- Dance & EDM-->
-  <div class="col-sm-3 col-xs-12"><div class="album"><img src="asset/img/songlist/dance.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Music Dance And EDM</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdance"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
-
   <!-- Hip-Hop And Rap-->
   <div class="col-sm-3 col-xs-12"><div class="album"><img src="asset/img/songlist/rap.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Music Hip-Hop And Rap</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumhiphop"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+
+
+ <!-- Anime-->
+  <div class="col-sm-3 col-xs-12"><div class="album"><img src="asset/img/songlist/dance.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Music Anime And J-Pop</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdance"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+
 
   <!-- Soundtrack-->
   <div class="col-sm-3 col-xs-12"><div class="album"><img src="asset/img/songlist/moana.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Music Soundtrack Film</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumSoundtrack"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
@@ -95,7 +97,7 @@
 <div class="modal fade" id="albumrock" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-<h2>Genre Rock</h2>
+<h2>Genre Korean Pop</h2>
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/286750126&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -128,7 +130,7 @@
 <div class="modal fade" id="albumdance" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-<h2>Genre Dance And EDM</h2>
+<h2>Genre Anime And J-Pop</h2>
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/286762314&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
