@@ -24,8 +24,17 @@ public function insert_user()
 	}
 /*=============================================================== */
 
-/*====================LIHAT ANGGOTA=========================== */
+/*====================LIHAT ANGGOTA urut sesuai nim=========================== */
 	public function view_user(){
+		$this->db->order_by('nim');
+		$query =  $this->db->get('anggotaukm');
+		return $query->result_array();
+	}
+/*=============================================================== */
+
+/*====================LIHAT point anggota urut sesai banyak point=========================== */
+	public function view_point(){
+		$this->db->order_by('point','desc');
 		$query =  $this->db->get('anggotaukm');
 		return $query->result_array();
 	}

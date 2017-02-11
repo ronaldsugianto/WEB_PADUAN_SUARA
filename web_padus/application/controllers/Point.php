@@ -9,7 +9,7 @@ public function __construct(){
 }
 	public function index()
 	{
-		$data['akun'] = $this->Akun_model->view_user(); 
+		$data['akun'] = $this->Akun_model->view_point(); 
 		$this->load->view('templates/header');	
 		$data['judul'] = "Welcome To Halaman Point Anggota !";
 

@@ -105,12 +105,12 @@
                         </h4>
 
                         <h4>
-                        <input class="form-control" name='linktwit' placeholder="link Twitter" type="text" id="link" required="required"
+                        <input class="form-control" name='linktwit' placeholder="link Twitter" type="text" id="link" 
                         value="<?= $pengurus['linktwit']?>">
                         </h4>
 
                         <h4>
-                        <input class="form-control" name='link' placeholder="link Facebook" type="text" id="link" required="required"
+                        <input class="form-control" name='link' placeholder="link Facebook" type="text" id="link" 
                         value="<?= $pengurus['link']?>">
                         </h4>
                         

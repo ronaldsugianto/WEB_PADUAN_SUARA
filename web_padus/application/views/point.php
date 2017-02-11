@@ -21,6 +21,7 @@
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
+                                            <th>No</th>
 											<th>Nim</th>
 	                                        <th>Nama</th>
 	                                        <th>Point</th>
@@ -28,8 +29,10 @@
                                     </thead>
 
                                     <tbody>
-                                    <?php foreach ($akun as $perakun) { ?>
+
+                                    <?php  $no = 1; foreach ($akun as $perakun) { ?>
                                         <tr>
+                                            <th><?php echo $no++ ?></th>                                        
                                             <th><?= $perakun['nim']; ?></th>
                                             <th><?= $perakun['nama']; ?></th>
                                             <th><?= $perakun['point']; ?></th>
