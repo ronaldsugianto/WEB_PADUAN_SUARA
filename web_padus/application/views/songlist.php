@@ -36,9 +36,9 @@
 <br><br><br><br>
 
 
-<!-- daftar gendre-->
+<!-- daftar genre-->
 <div id="album" class="releases spacer">
-<h3><span class="glyphicon glyphicon-music"></span> Daftar Gendre </h3>
+<h3><span class="glyphicon glyphicon-music"></span> Daftar Genre </h3>
 <div class="row">
 
   <!-- pop-->
@@ -84,7 +84,7 @@
 <div class="modal fade" id="albumpop" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-<h2>Gendre Pop</h2>
+<h2>Genre Pop</h2>
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/286289340&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -95,7 +95,7 @@
 <div class="modal fade" id="albumrock" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-<h2>Gendre Rock</h2>
+<h2>Genre Rock</h2>
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/286750126&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -106,7 +106,7 @@
 <div class="modal fade" id="albumjazzblues" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-<h2>Gendre Jazz And Blues</h2>
+<h2>Genre Jazz And Blues</h2>
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/286754849&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -117,7 +117,7 @@
 <div class="modal fade" id="albumclassical" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-<h2>Gendre Classical</h2>
+<h2>Genre Classical</h2>
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/286756745&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -128,7 +128,7 @@
 <div class="modal fade" id="albumdance" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-<h2>Gendre Dance And EDM</h2>
+<h2>Genre Dance And EDM</h2>
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/286762314&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -139,7 +139,7 @@
 <div class="modal fade" id="albumhiphop" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-<h2>Gendre Hip-Hop And Rap</h2>
+<h2>Genre Hip-Hop And Rap</h2>
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/286769262&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -149,7 +149,7 @@
 <div class="modal fade" id="albumSoundtrack" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-<h2>Gendre Soundtrack Film</h2>
+<h2>Genre Soundtrack Film</h2>
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/286773950&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -160,7 +160,7 @@
 <div class="modal fade" id="albumindonesia" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-<h2>Gendre Indonesia Pop</h2>
+<h2>Genre Indonesia Pop</h2>
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/286298627&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
