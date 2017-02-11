@@ -27,6 +27,6 @@ public function __construct(){
 	}
 	public function updatepoint($nim){
 		$this->Akun_model->updatepoint($nim, $this->input->post('point'));
-		redirect('editpoint');
+		redirect('editpoint#editpoint');
 	}
 }

@@ -1,11 +1,11 @@
-              <a href="#edit" class="page-scroll btn btn-xl">Next Edit</a>
+              <a href="#editanggota" class="page-scroll btn btn-xl">Next Edit</a>
             </div>
         </div>
     </header>
     <!-- Header======================================= -->
 
 <br><br><br><br>
-    <x id="edit">
+    <x id="editanggota">
 
     <div id="wrapper">
     	            <!-- /.row -->

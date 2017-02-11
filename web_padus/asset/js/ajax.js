@@ -1,7 +1,7 @@
 
 $("#email").change( function(){
    $.ajax({
-        url: "http://ourvoice.local/ajax/cekemail",
+        url: "http://ourvoice.local/ajax/cekemailanggota",
         data: { "emailanggotanya" : $(this).val() },
         method: "POST",
         success: function(result){
@@ -18,7 +18,7 @@ $("#email").change( function(){
 
 $("#nim").change( function(){
    $.ajax({
-        url: "http://ourvoice.local/ajax/ceknim",
+        url: "http://ourvoice.local/ajax/ceknimnim",
         data: { "nimanggotanya" : $(this).val() },
         method: "POST",
         success: function(result){

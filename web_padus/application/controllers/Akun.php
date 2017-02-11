@@ -20,7 +20,7 @@ class Akun extends CI_Controller {
 	function hapus($nim){
 		$where = array('nim' => $nim);
 		$this->Akun_model->hapus_data($where,'anggotaukm');
-		redirect('editanggota');
+		redirect('editanggota#editanggota');
 	}
 /*==========================================================================*/
 
@@ -50,7 +50,7 @@ $data['anggotaukm'] = $this->Akun_model->edit_data($where,'anggotaukm')->result(
 		);
 
 		$this->Akun_model->update_data($where,$data,'anggotaukm');
-		redirect('editanggota');
+		redirect('editanggota#editanggota');
 	}
 /*======================= ================================================*/
 
@@ -79,18 +79,9 @@ $data['anggotaukm'] = $this->Akun_model->edit_data($where,'anggotaukm')->result(
 		);
 
 		$this->Akun_model->update_dataorg($where,$data,'organisasi');
-		redirect('editorganisasi');
+		redirect('editorganisasi#editorganisasi');
 	}
 /*======================= ================================================*/
-
-
-
-
-
-
-
-
-
 
 /*======================= EDIT KEGIATAN=========================*/
 	public function editkg($idkegiatan){
@@ -120,14 +111,14 @@ $data['kegiatanukm'] = $this->Akun_model->edit_datakg($where,'kegiatanukm')->res
 		);
 
 		$this->Akun_model->update_datakg($where,$data,'kegiatanukm');
-		redirect('editkegiatan');
+		redirect('editkegiatan#editkegiatan');
 	}
 /*=======================================================================*/
 
 /*=====================UPLOAD KEGIATAN==============================*/
 	public function upload(){
 		$this->Akun_model->insert_kegiatan(); 
-		redirect('editkegiatan');
+		redirect('editkegiatan#editkegiatan');
 	}
 /*=========================================================================*/
 
@@ -135,7 +126,7 @@ $data['kegiatanukm'] = $this->Akun_model->edit_datakg($where,'kegiatanukm')->res
 	function hapuskegiatan($idkegiatan){
 		$where = array('idkegiatan' => $idkegiatan);
 		$this->Akun_model->hapus_kegiatan($where,'kegiatanukm');
-		redirect('editkegiatan');
+		redirect('editkegiatan#editkegiatan');
 	}
 /*==========================================================================*/
 

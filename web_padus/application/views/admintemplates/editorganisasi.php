@@ -1,11 +1,12 @@
-            <a href="#editoranisasi" class="page-scroll btn btn-xl">Next Edit Oranisasi </a>
+            <a href="#editorganisasi" class="page-scroll btn btn-xl">Next Edit Oranisasi </a>
             </div>
         </div>
     </header>
     <!-- Header======================================= -->
 
 <br><br>
-    <section id="editoranisasi">
+<section id="editorganisasi">
+
    <div id="wrapper">
 
 
@@ -20,8 +21,8 @@
             </div>
 
 <!--  CONTOH -->
-<div class="row">
 
+<div class="row">
     <!-- KETUA UKM -->
                 <div class="col-sm-4">
                     <div class="team-member">
