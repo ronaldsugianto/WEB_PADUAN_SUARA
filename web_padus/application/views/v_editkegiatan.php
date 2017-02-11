@@ -69,7 +69,7 @@
     <br>
     <div class="form-group">
       <div class="col-lg-10 col-lg-offset-2">
-        <button type="submit"  class="btn btn-daftar"><i class="fa fa-check" aria-hidden="true"></i> Edit</button>
+        <button type="submit"  class="btn btn-daftar"><i class="fa fa-check" aria-hidden="true"></i> Save</button>
       </div>
     </div>
   </fieldset>

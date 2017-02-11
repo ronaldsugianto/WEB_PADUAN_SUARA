@@ -32,7 +32,7 @@
       <div class="col-lg-5">
        <input class="form-control" name='nim' placeholder="NIM" type="text" id="nim" required="required">
 <!-- BAGIAN AJAX -->   
-   <p id="warning_nim"> </p>
+<p id="warning_nim"> </p>
 <!-- ============ -->   
       </div>
     </div>
@@ -54,9 +54,9 @@
       <label  class="col-lg-2 control-label">Email</label>
       <div class="col-lg-5">
         <input type="email" class="form-control" name='email' placeholder="Email Active" id="email" required="required">
-   
-   <p id="warning_email"> </p>
-
+<!-- BAGIAN AJAX -->   
+<p id="warning_email"> </p>
+<!-- ============ -->   
       </div>
        
     </div>

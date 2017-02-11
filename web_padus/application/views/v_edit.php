@@ -32,12 +32,8 @@
 
 
 
-    <div class="form-group">
-      <label fotionNIM" class="col-lg-2 control-label" >NIM</label>
-      <div class="col-lg-5">
-        <input class="form-control" name='nim' value="<?= $perakun->nim ?>" placeholder="NIM" type="text" >
-      </div>
-    </div>
+
+        <input class="form-control" name='nim' value="<?= $perakun->nim ?>" placeholder="NIM" type="hidden" >
 
     <div class="form-group">
       <label  class="col-lg-2 control-label" required="required">Jurusan</label>
@@ -79,7 +75,7 @@
                          <br> <br> <br> <br>
       <div class="form-group">
           <div class="col-lg-10 col-lg-offset-2">
-            <button type="submit" value="Simpan" class="btn btn-daftar"><i class="fa fa-check-square-o" aria-hidden="true"></i> Daftar</button>
+            <button type="submit" value="Simpan" class="btn btn-daftar"><i class="fa fa-check-square-o" aria-hidden="true"></i> Save</button>
           
           </div>
       </div>
