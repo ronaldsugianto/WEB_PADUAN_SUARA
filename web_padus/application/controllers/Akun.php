@@ -12,7 +12,7 @@ class Akun extends CI_Controller {
 /*=====================PENDAFTARAN ANGGOTA==============================*/
 	public function pendaftaran(){
 		$this->Akun_model->insert_user(); //
-		redirect('anggota');
+		redirect('anggota#Pendaftaran');
 	}
 /*=========================================================================*/
 
