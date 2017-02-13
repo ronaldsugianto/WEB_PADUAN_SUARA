@@ -26,6 +26,8 @@ class Akun extends CI_Controller {
 
 /*======================= EDIT ANGGOTA =========================*/
 	function edit($nim){
+						if(!isset($_SESSION['login'])) redirect(base_url().'loginadmin');
+	   $data['akun'] = $this->Akun_model->view_user();
 	$where = array('nim' => $nim);
 $data['anggotaukm'] = $this->Akun_model->edit_data($where,'anggotaukm')->result();
 	$this->load->view('v_edit', $data );
@@ -85,6 +87,7 @@ $data['anggotaukm'] = $this->Akun_model->edit_data($where,'anggotaukm')->result(
 
 /*======================= EDIT KEGIATAN=========================*/
 	public function editkg($idkegiatan){
+								if(!isset($_SESSION['login'])) redirect(base_url().'loginadmin');
 	$where = array('idkegiatan' => $idkegiatan);
 $data['kegiatanukm'] = $this->Akun_model->edit_datakg($where,'kegiatanukm')->result();
 	$this->load->view('v_editkegiatan', $data );
