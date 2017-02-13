@@ -29,14 +29,14 @@
     <div class="form-group">
       <label type="text"  class="col-lg-2 control-label">Waktu</label>
       <div class="col-lg-5">
-        <input class="form-control" name='waktu' value="<?= $perakun->waktu ?>" placeholder="Waktu kegiatan" type="text" required="required">
+        <input class="form-control" name='waktu' value="<?= $perakun->waktu ?>" placeholder="Ex: 00:00-00:00" type="text" required="required">
       </div>
     </div>
 
     <div class="form-group">
       <label class="col-lg-2 control-label" >Tanggal</label>
       <div class="col-lg-5">
-       <input class="form-control" name='tanggal' value="<?= $perakun->tanggal ?>" placeholder="Tanggal kegiatan" type="text"  required="required">
+       <input class="form-control" name='tanggal' value="<?= $perakun->tanggal ?>" placeholder="Ex: Tgl-Bln-Thn (01-ags-1996)" type="text"  required="required">
       </div>
     </div>
 

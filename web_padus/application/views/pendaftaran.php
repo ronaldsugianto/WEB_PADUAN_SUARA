@@ -55,7 +55,7 @@
       <div class="col-lg-5">
         <input type="email" class="form-control" name='email' placeholder="Email Active" id="email" required="required">
 <!-- BAGIAN AJAX -->   
-<p id="warning_email"> </p>
+<!-- <p id="warning_email"> </p> -->
 <!-- ============ -->   
       </div>
        
