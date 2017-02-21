@@ -21,7 +21,7 @@
   <script src="asset/js/plugins.js" type="text/javascript"></script>
   <script src="asset/js/script.js" type="text/javascript"></script>
 
-
+    <script src="asset/js/ajax.js"></script>
 </body>
 
 </html>

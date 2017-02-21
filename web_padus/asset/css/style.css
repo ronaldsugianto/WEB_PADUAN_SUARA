@@ -1,3 +1,5 @@
+
+
 .animate
 {
   -webkit-animation: animatezoom 0.9s;
@@ -97,6 +99,7 @@ header {
 .homeinfo .player{margin-top: 70px;position: relative;}
 .homeinfo .player img.graphics{position: absolute;bottom: 167px;right: -24px;}
 .blockblack{background:rgba(0,0,0,0.8); border-radius: 10px; padding: 25px; }
+.blockblack2{background:rgba(238, 238, 238, 0.96); border-radius: 10px; padding: 25px; }
 .fronttext h2{font-size:60px; line-height:60px;display: inline-block;padding:5px 10px;}
 .fronttext p{margin:0;background-color: rgba(0,0,0,0.7);display: inline-block;padding: 10px;}
 .overlay{z-index: 100;position: relative;}
@@ -104,8 +107,8 @@ header {
 
 /*color*/
 
-a{color:#FFFFFF; text-decoration:none}
-a:hover{color:#808080;text-decoration:none}
+a{color:#ee0000; text-decoration:none}
+a:hover{color:#363636;text-decoration:none}
 /*color*/
 
 

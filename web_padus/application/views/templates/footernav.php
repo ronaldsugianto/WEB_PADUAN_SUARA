@@ -34,10 +34,8 @@
                     <li role="separator" class="divider"></li>
 
                     <li>  
-                      <a href="Homepage" ><i class="fa fa-sign-out" aria-hidden="true" ></i> Log Out </a>
+                      <a href="Homepage" ><i class="fa fa-sign-out" aria-hidden="true" ></i> Back </a>
                     </li>
-
-
     </ul>
   </div>        
                 </ul>

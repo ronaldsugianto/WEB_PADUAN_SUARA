@@ -1,12 +1,12 @@
-               <a href="#anggota" class="page-scroll btn btn-xl">Next Anggota</a>
+              <a href="#editanggota" class="page-scroll btn btn-xl">Next Edit</a>
             </div>
         </div>
     </header>
     <!-- Header======================================= -->
 
 <br><br><br><br>
-    <x id="anggota">
-    	
+    <x id="editanggota">
+
     <div id="wrapper">
     	            <!-- /.row -->
             <div class="row">
@@ -25,17 +25,25 @@
                                             <th>Nama</th>
                                             <th>Jurusan</th>
                                             <th>Email</th>
+                                            <th>Pilih</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                     <?php foreach ($akun as $perakun) { ?>
                                         <tr>
-                                           <th><?= $perakun['nim']; ?></th>
-                                           <th><?= $perakun['nama']; ?></th>
-                                           <th><?= $perakun['jurusan']; ?></th>
-                                           <th><?= $perakun['email']; ?></th>
-
+                                            <th><?= $perakun['nim']; ?></th>
+                                            <th><?= $perakun['nama']; ?></th>
+                                            <th><?= $perakun['jurusan']; ?></th>
+                                            <th><?= $perakun['email']; ?></th>
+                                            <th>
+                                <!-- EDIT DATA BLOM BISA  -->               
+                        <?php echo anchor('Akun/edit/'.$perakun['nim'],'Edit'); ?> 
+                                <!-- EDIT DATA BLOM BISA  -->  
+                        / 
+                        <?php echo anchor('Akun/hapus/'.$perakun['nim'],'Hapus'); ?> 
+                                            
+                                            </th>
                                         </tr>
                                      <?php } ?>
 
@@ -52,7 +60,8 @@
  
             </div>
             <!-- /.row -->
-    </div>
+
+                </div>
     <!-- /#wrapper -->
 
     </x>
